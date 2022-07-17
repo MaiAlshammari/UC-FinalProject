@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Photos </title>
+    <link rel="stylesheet" href="/Css file/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/517a35d9ce.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+</head>
+
+<body>
+    <section id="header">
+    <div class="navbar">
+        <a class="active" href="#"> <i class='fas fa-laptop'></i>  My Personal Website </a>
+        <a href="/FinalProject.html"><i class='fas fa-home'></i> </a>
+        <a href="./Photos.html"><i class='fas fa-camera-retro'></i> My Photos </a>
+        <a href="./Pets.html"><i class='fas fa-cat'></i> My Pets </a>
+        <a href="./Cooks.html"><i class='fas fa-utensils'></i> My Cooks </a>
+        <a href="./Art.html"><i class='fas fa-paint-brush'></i> My Art</a>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <img src="/assets/Mai.JPG" alt="Me and Robot Sophia" style="width:100%" onclick="myFunction(this);">
+      </div>
+
+    <div class="column">
+      <img src="/assets/photo 1.JPG" alt="Fruit" style="width:100%" onclick="myFunction(this);">
+    </div>
+
+    <div class="column">
+      <img src="/assets/photo 2.JPG" alt="Flower" style="width:100%" onclick="myFunction(this);">
+    </div>
+
+    <div class="column">
+      <img src="/assets/photo 3.JPG" alt="Bubbles" style="width:100%" onclick="myFunction(this);">
+    </div>
+
+    <div class="column">
+      <img src="/assets/photo 4.JPG" alt="Love" style="width:100%" onclick="myFunction(this);">
+    </div>
+
+    <div class="column">
+        <img src="/assets/photo 5.JPG" alt="Flower" style="width:100%" onclick="myFunction(this);">
+      </div>
+
+      <div class="column">
+        <img src="/assets/photo 6.JPG" alt="Sunset" style="width:100%" onclick="myFunction(this);">
+      </div>
+
+      <div class="column">
+        <img src="/assets/photo 7.JPG" alt="Flower" style="width:100%" onclick="myFunction(this);">
+      </div>
+
+      
+      
+      <div class="column">
+        <img src="/assets/photo 8.JPG" alt="Flower" style="width:100%" onclick="myFunction(this);">
+      </div>
+
+  </div>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+
+
+
+</section>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+  
+  }
+
+
+
+#header
+{
+height:100vh;
+background-image: url(/assets/Picture4\ -\ Copy.jpg) ;
+background-position:center;
+background-size:cover;
+
+}
+
+
+
+
+
+
+.container
+{
+    margin-right: 20px ;
+    margin-left: 30px;
+    
+}
+
+.logo
+{
+margin-top: 30px;
+width: 350px ;
+border: 4px solid rgb(44, 11, 187)  ;
+}
+
+
+
+.header-text
+{
+    max-width: 350px;
+    margin-top: 10px; 
+    text-align: center;
+}
+
+h1
+{
+font-size:30px;
+
+}
+
+.square
+{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 10px 0;
+}
+
+.navbar {
+    width: 100%;
+    overflow:auto;
+
+    
+    
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font: bold;
+  
+ 
+  
+  }
+  
+  .navbar a:hover {
+    background-color: #f67c92;
+ 
+   
+   
+  }
+  
+
+  .active 
+  {
+    background-color:plum;}
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;}}
+  
+
+
+
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+      }
+      
+      /* Style the images inside the grid */
+      .column img {
+        opacity: 0.8; 
+        cursor: pointer; 
+      }
+      
+      .column img:hover {
+        opacity: 1;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* The expanding image container */
+      .container {
+        position: relative;
+        display: none;
+      }
+      
+      /* Expanding image text */
+      #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+      }
+      
+      /* Closable button inside the expanded image */
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
